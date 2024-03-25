@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.cards1 = new TaskTracker.Cards();
+            this.SuspendLayout();
+            // 
+            // cards1
+            // 
+            this.cards1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.cards1.Location = new System.Drawing.Point(42, 32);
+            this.cards1.Name = "cards1";
+            this.cards1.Padding = new System.Windows.Forms.Padding(8);
+            this.cards1.Size = new System.Drawing.Size(270, 406);
+            this.cards1.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(332, 450);
+            this.Controls.Add(this.cards1);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Resize += new System.EventHandler(this.Form1_Resize);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Cards cards1;
     }
 }
 
