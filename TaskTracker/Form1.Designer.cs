@@ -28,24 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.cards1 = new TaskTracker.Cards();
+            this.ucIssueView1 = new TaskTracker.UCIssueView();
             this.SuspendLayout();
             // 
-            // cards1
+            // ucIssueView1
             // 
-            this.cards1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.cards1.Location = new System.Drawing.Point(42, 32);
-            this.cards1.Name = "cards1";
-            this.cards1.Padding = new System.Windows.Forms.Padding(8);
-            this.cards1.Size = new System.Drawing.Size(270, 406);
-            this.cards1.TabIndex = 0;
+            this.ucIssueView1.Location = new System.Drawing.Point(182, 126);
+            this.ucIssueView1.Name = "ucIssueView1";
+            this.ucIssueView1.Size = new System.Drawing.Size(1050, 250);
+            this.ucIssueView1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(332, 450);
-            this.Controls.Add(this.cards1);
+            this.ClientSize = new System.Drawing.Size(1471, 660);
+            this.Controls.Add(this.ucIssueView1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Resize += new System.EventHandler(this.Form1_Resize);
@@ -55,7 +53,7 @@
 
         #endregion
 
-        private Cards cards1;
+        private UCIssueView ucIssueView1;
     }
 }
 
